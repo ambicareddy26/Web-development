@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Areas</title>
+  <style>
+    body{
+      display: grid;
+      grid-template-areas:"header"
+                          "main"
+                          "footer";/*Arrange the order you want to display*/
+    }
+
+    header{
+      grid-area: header;/* just give any name */
+    }
+
+    main{
+      grid-area: main;
+    }
+
+    footer{
+      grid-area: footer;
+    }
+
+    @media screen and (max-width:500px) {
+      body{
+        grid-template-areas: "main"
+                              "header"
+                              "footer"; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Section One</h1>
+  </header>
+
+  <main>
+    <h1>Section 2</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque inventore deserunt vel consequuntur qui molestiae dolorum placeat doloribus fugit mollitia expedita, veniam autem est perferendis veritatis nisi illo atque voluptatem.</p><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum debitis necessitatibus nobis, iusto eum quas inventore maiores omnis cum vero delectus labore minima culpa impedit aliquid. Dolorem delectus nisi omnis?</p>
+  </main>
+
+  <footer>
+    <h1>Section Three</h1>
+  </footer>
+</body>
+</html>

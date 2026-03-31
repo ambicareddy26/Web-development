@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Areas</title>
+  <style>
+
+    body{
+      height: 100vh;
+      display: grid;
+      grid-template-columns:35% 35% auto;
+      grid-template-rows: 15% 55% auto;
+      grid-template-areas: "header header aside"
+                            "section article aside"
+                            "footer footer aside";
+      gap: 1.5rem;
+    }
+
+    header{
+      background-color: rgb(255, 136, 0);
+      grid-area: header;
+    }
+
+    aside{
+      background-color:rgb(0, 217, 255);
+      grid-area: aside;
+    }
+
+    section{
+      background-color: orange;
+      grid-area: section;
+    }
+
+    article{
+      background-color: blue;
+      grid-area: article;
+    }
+
+    footer{
+      background-color: tomato;
+      grid-area: footer;
+    }
+
+  </style>
+</head>
+<body>
+  <header></header>
+  <aside></aside>
+  <section></section>
+  <article></article>
+  <footer></footer>
+</body>
+</html>
