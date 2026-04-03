@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyFrames</title>
+  <style>
+    div{
+      margin-top: 50px;
+      height: 200px;
+      width: 200px;
+      background-color: rosybrown;
+      position: absolute;
+      animation: left-to-right 5s ease-in infinite;
+    }
+    @keyframes left-to-right{
+      0%{
+        left: 0%;
+        background-color: plum;
+      }
+      50%{
+        left:50%;
+        transform: rotate(45deg);
+        background-color: saddlebrown;
+      }
+      80%{
+        left: 70%;
+        transform: rotate(90deg);
+        background-color: gray;
+      }
+      100%{
+        left: 100%;
+        transform: rotate(180deg);
+        background-color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

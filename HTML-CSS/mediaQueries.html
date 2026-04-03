@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    /* For the desktop devices */
+    .mobile{
+      display: none;
+    }
+
+    .tablet{
+      display: none;
+    }
+    
+    /* For the tablet devices */
+    @media (max-width:1024px){
+      .mobile{
+        display: none;
+      }
+
+      .tablet{
+        display: block;
+      }
+
+      .desktop{
+        display: none;
+      }
+    }
+
+    /* For the mobile devices */
+    @media (max-width:450px){
+      .mobile{
+        display: block;
+      }
+
+      .tablet{
+        display: none;
+      }
+
+      .desktop{
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Resize the window to see the changes</h1>
+  <div class="mobile">
+    <h1>Mobile Devices</h1>
+    <img src="https://purepng.com/public/uploads/thumbnail//purepng.com-apple-iphone-xappleapple-iphonephonesmartphonemobile-devicetouch-screeniphone-xiphone-10electronicsobjects-251530689596fryq6.png">
+  </div>
+
+  <div class="tablet">
+    <h1>Tablet Devices</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCi7Zq7KU6QN96E2ZZnVwHToDjq1sByYS0BA&s">
+  </div>
+
+  <div class="desktop">
+    <h1>Desktop Devices</h1>
+    <img width="300px" src="https://acom.pk/cdn/shop/articles/Settling_the_Epic_Debate_Laptop_vs_Desktop_PC.jpg?v=1717775160">
+  </div>
+</body>
+</html>
