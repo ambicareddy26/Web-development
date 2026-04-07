@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        exercise 7
+    </title>
+    <head>
+       <style>
+          .search
+          {
+            margin-left: 100px;
+            width: 200px;
+            height:37px;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: rgb(96,96,96);
+            border-width: 1px;
+          }
+          .search::placeholder
+          {
+            margin-left: 10px;
+            color:rgb(96,96,96);
+            font-size: medium;
+          }
+          .search-bar
+          {
+            width: 300px;
+            height: 27px;
+            border-width: 1.5px;
+            border-radius: 4px;
+          }
+          .button
+          {
+            width: 300px;
+            height: 40px;
+            background-color: blue;
+            color:white;
+            border-radius: 20px;
+            border:none;
+            font-size: 17px;
+          }
+          .text
+          {
+            color: rgb(96,96,96);
+            font-size: large;
+          }
+          .google
+          {
+            width:500px;
+            height:37px;
+            border-radius: 25px;
+            box-shadow: 0px 1px 0.5px rgb(200,200,200);
+            margin-top:20px;
+            border-style: solid;
+            border-width: 1px;
+            background-color: white;
+            display: block;
+          }
+          .google::placeholder
+          {
+            padding-left: 10px;
+            color:rgb(96,96,96);
+            font-size: medium;
+          }
+          .cat
+          {
+            border-radius:50%;
+            width:50px;
+            margin-top:20px;
+            object-fit: contain;
+            display:inline;
+            object-position: center;
+            vertical-align: middle;
+          }
+          .text-bar
+          {
+            margin-left: 20px;
+            vertical-align: middle;
+            border:none;
+            width:400px;
+            padding-top: 10px;
+          }
+          .tweet
+          {
+            background-color: rgb(100, 100, 253);
+            width: 70px;
+            height:30px;
+            color:white;
+            font-weight:bold;
+            border-radius:20px;
+            border:none;
+          }
+       </style>
+    </head>
+    <body>
+        <label> Email </label><br>
+        <input class="search-bar" type="text" placeholder="  Email">
+        <input class="search" type="text" placeholder="   Search">
+        <p class="text">By clicking Agree & Join,you agree to the Privacy Policy.</p>
+        <button class="button">
+          Agree & Join
+        </button>
+        <input class="google" type="text" placeholder="Search Google or type a URL"><br>
+        <img  class="cat" src="cat.jpg">
+        <input class="text-bar" type="text" placeholder="What's happening?">
+        <button class="tweet">
+            Tweet
+        </button>
+    </body>
+</html>
