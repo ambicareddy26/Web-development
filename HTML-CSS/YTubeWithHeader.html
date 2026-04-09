@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .thumbnail
+            {
+                width:350px;
+            }
+            .search
+            {
+                height:25px;
+                width:25px;
+                padding-top:3px;
+            }
+            .search-button
+            {
+                height:39px;
+                width:55px;
+            }
+            .voice-search
+            {
+                height:20px;
+            }
+            .voice-search-button
+            {
+                height:40px;
+                width:40px;
+                border-radius:20px;
+                border:none;
+                margin-left: 20px;
+            }
+            .hamburger-menu
+            {
+                height:20px;
+            }
+            .youtube-logo
+            {
+                height:20px;
+                margin-left:15px;
+            }
+            .middle-section
+            {
+                display:flex;
+                flex:1;
+                flex-direction:row;
+            }
+            .header
+            {
+                margin-bottom:13px;
+                display:flex;
+                flex-direction: row;
+                align-items: center;   
+            }
+            .search-bar
+            {
+                padding:9px;
+                margin-left:70px;
+                border-color:rgb(211, 211, 211);
+                border-style:solid;
+                border-width:1px;
+                display: flex;
+                max-width:300px;
+                flex:1;
+                height:20px;
+                border-radius:2px;
+                box-shadow:inset 1px 1px 3px rgba(0,0,0,0.05);
+            }
+            .search-bar::placeholder{
+                color:gray;
+                font-size:16px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="header">
+                <div class="left-section">
+                    <img class="hamburger-menu" src="hamburger-menu.svg">
+                    <img class="youtube-logo" src="youtube-logo.svg">
+                </div>
+                <div class="middle-section">
+                    <input class="search-bar" type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img class="search" src="search.svg">
+                    </button>
+                    <button class="voice-search-button">
+                        <img class="voice-search" src="voice-search-icon.svg">
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img class="thumbnail" src="Images/thumbnail-1.webp">
+            </div>
+    </body>
+</html>

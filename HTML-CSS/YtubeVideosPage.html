@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             @media (max-width:1000px)
+            {
+                .video-title
+                {
+                    font-size:16px;
+                    line-height:24px;
+                }
+            }
+            @media (max-width:1000px)
+            {
+                .name,.views
+                {
+                    font-size:14px;
+                }
+            }
+            @media (min-width: 1000px)
+            { 
+                .video-grid
+                {
+                    grid-template-columns:1fr 1fr 1fr 1fr;
+                }
+            }
+            @media (min-width: 650px)
+            {
+                .video-grid
+                {
+                    grid-template-columns:1fr 1fr;
+                }
+            }
+            @media (min-width: 651px) and (max-width: 999px)
+            {
+                .video-grid
+                {
+                    grid-template-columns:1fr 1fr 1fr;
+                }
+            }
+            .video-grid
+            {
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                row-gap:10px;
+                column-gap:10px;
+            }
+            p 
+            {
+                margin-bottom:0px;
+                margin-top:0px;
+            }
+            .thumbnail-pic
+            {
+                width:100%;
+                margin-bottom:10px;
+            }
+            .thumbnail
+            {
+                position:relative;
+            }
+            .time
+            {
+                position:absolute;
+                background-color:black;
+                color:white;
+                padding:3px;
+                border-radius: 2px;
+                bottom:20px;
+                right:5px;
+            }
+            .video-info
+            {
+                display:grid;
+                grid-template-columns:50px 1fr;
+            }
+            .channel-pic
+            {
+                height:44px;
+                width:44px;
+                border-radius:22px;
+            }
+            .title
+            {
+                margin-left:3px;
+            }
+            .video-title
+            {
+                font-size: 17px;
+                line-height:21px;
+                margin-bottom: 8px;
+            }
+            .name-and-views
+            {
+                color:gray;
+                font-size:15px;
+            }
+            .name,.views
+            {
+                margin-bottom:3px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="video-grid">
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-1.webp">
+                <div class="time">14:20</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="Images/channel-1.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Talking Tech and AI with Google CEO Sundar Pichai!</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">Marques Brownlee</p>
+                        <p class="views">3.4M views · 6 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-2.webp">
+                <div class="time">8:22</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-2.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Try Not To Laugh Challenge #9</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">markiplier</p>
+                        <p class="views">19M views · 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-3.webp">
+                <div class="time">9:13</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-3.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Crazy Tik Toks Taken Moments Before...</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">SSSniperWolf</p>
+                        <p class="views">12M views · 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-4.webp">
+                <div class="time">22:09</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-4.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>The Simplest Math Problem No One Can Solve...</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">Veritasium</p>
+                        <p class="views">18M views · 4 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-5.webp">
+                <div class="time">11:17</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-5.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Kadane's Algorithm to Maximum Sum Subarray...</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">CS Dojo</p>
+                        <p class="views">519K views · 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-6.webp">
+                <div class="time">19:59</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-6.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Anything You can Fit In The Circle I'll Pay for</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">MBeast</p>
+                        <p class="views">141M views · 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="Images/thumbnail-7.webp">
+                <div class="time">10:13</div>
+            </div>
+            <div class="video-info">
+                <div class="channel">
+                    <img class="channel-pic" src="channel-7.jpeg">
+                </div>
+                <div class="title">
+                    <div class="video-title">
+                        <strong>Why Planes Don't Fly Over Tibet</strong>
+                    </div>
+                    <div class="name-and-views">
+                        <p class="name">RealLifeLore</p>
+                        <p class="views">36.6M views · 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>
