@@ -1,0 +1,59 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Image Gallery</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #f4f4f4;  
+        }  
+        .gallery {  
+            display: flex;  
+            flex-wrap: wrap;  
+            justify-content: center;  
+            padding: 20px;  
+        }  
+        .thumbnail {  
+            margin: 10px;  
+            border: 2px none;  
+            border-radius: 5px;  
+            overflow: hidden;  
+            transition: transform 0.3s;  
+        }  
+        .thumbnail img {  
+            display: block;  
+            width: 200px;  
+            height: 200px;  
+        }  
+        .thumbnail:hover {  
+            transform: scale(1.05);  
+        }  
+    </style>  
+</head>  
+<body>  
+
+<h1 style="text-align: center;">Image Gallery</h1>  
+<div class="gallery">  
+    <a class="thumbnail" href="Images/image-1.webp" target="_blank">  
+        <img src="Images/thumbnail-1.webp" alt="Thumbnail 1">  
+    </a>  
+    <a class="thumbnail" href="Images/image-2.webp" target="_blank">  
+        <img src="Images/thumbnail-2.webp" alt="Thumbnail 2">  
+    </a>  
+    <a class="thumbnail" href="Images/image-3.webp" target="_blank">  
+        <img src="Images/thumbnail-3.webp" alt="Thumbnail 3">  
+    </a>  
+    <a class="thumbnail" href="Images/image-4.webp" target="_blank">  
+        <img src="Images/thumbnail-4.webp" alt="Thumbnail 4">  
+    </a>  
+    <a class="thumbnail" href="Images/image-5.webp" target="_blank">  
+        <img src="Images/thumbnail-5.webp" alt="Thumbnail 5">  
+    </a>  
+</div>  
+
+</body>  
+</html> 
