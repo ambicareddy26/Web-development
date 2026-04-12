@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .shirt
+            {
+                height:260px;
+                width:220px;
+            }
+           .discount
+            {
+                background-color: black;
+                color:white;
+                padding: 7px;
+                position: absolute;
+                top:5px;
+                right:0px
+            }
+            .brand
+            {
+                position: relative;
+                margin-left: 20px;
+                display:inline-block;
+            }
+            .add-to-cart
+            {
+                height:60px;
+                position: absolute;
+                bottom:0px;
+                right:0px;
+                left:0px;
+                background-color:rgba(255,255,255,0.8);
+                display:flex;
+                align-items: center;
+                justify-content:center;
+            }
+            .add-to-cart-button
+            {
+                background-color: rgb(245, 235, 235);
+                color:black;
+                border-color:black;
+                border-style:solid;
+                border-width:1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="brand">
+            <img class="shirt" src="shirt.jpeg">
+            <div class="discount">20% OFF</div>
+            <div class="add-to-cart">
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>
