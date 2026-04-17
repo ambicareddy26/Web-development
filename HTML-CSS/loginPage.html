@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple login Page</title>
+  <style>
+    body{
+      background-image: url(https://images.collectingcars.com/061085/-DSC9390.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85);
+      background-repeat: no-repeat;/* When the image is not covered whole
+       web page then the image will repeat.So will be used not to repeat the image in background */
+      background-size: cover;/* Used to perfectly cover the entire web page */
+    }
+    div{
+      width: 40%;
+      margin-left: 30%;
+      margin-top: 7%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      color: white;
+      font-size: x-large;
+      font-weight: bold;
+      box-shadow: 5px 5px 5px black;
+    }
+    input{
+      height: 1.5rem;
+      width: 90%;
+      border-radius: 20px;
+      border:1px solid silver;
+      margin-left: 2rem;
+      font-size: medium;
+      padding-left: 1rem;
+    }
+    td{
+      padding-bottom: 20px;
+    }
+
+    button{
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+      border: 1px solid rgb(240, 236, 236);
+      cursor: pointer;
+      font-weight: bold;
+      font-size: medium;
+      padding: 10px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Login Here</h1>
+    <form>
+      <!-- //The reason to use tables is that if we use just label and input
+      the input bar comes next to the label which looks the input is 
+      displayed at different positions.
+      If we use table the inputs will be aligned correctly. -->
+  
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" id="name"></td>
+        </tr>
+
+        <tr>
+          <td><label for="num">Number</label></td>
+          <td><input type="number" id="num"></td>
+        </tr>
+
+        <tr>
+          <td><label for="mail">Email</label></td>
+          <td><input type="email" id="mail"></td>
+        </tr>
+
+        <tr>
+          <td><label for="pass">Password</label></td>
+          <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>
+          <td><button>Login</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
