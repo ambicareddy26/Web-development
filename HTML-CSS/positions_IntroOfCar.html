@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Making sure that no default margin */
+    *{
+      margin: 0;
+    }
+    /* Main division */
+    .main{
+      width: 100vw;
+      height: 100vh;
+    }
+    /* Image of the main division and making it's 
+    position relative so that the other logos and 
+    text can be placed on that */
+    #main_image{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    /* This is sub division1 which is the logo
+    and placed at the left top corner of the main image */
+    .sub11{
+      position: absolute;
+      top:5vh;
+      right: 0;
+    }
+    /* Logo */
+    .sub11 img{
+      width: 150px;
+    }
+    /* This is sub division2 which is the symbol(logo)
+    and placed at the right top corner of the main image */
+    .sub12{
+      position: absolute;
+      top:5vh;
+      left:5vw;
+    }
+    /* Symbol */
+    .sub12 img{
+      width: 200px;
+    }
+    /* These are the contents */
+    .list{
+      position: absolute;
+      font-size: 20px;
+      color: silver;
+      top:30vh;
+      left:5vw;
+    }
+    /* When we hover color changes to red and moves right */
+    .list td:hover{
+      padding-left:4vw;
+      cursor: pointer;
+      color:red;
+      transition: all 1.5s ease;
+    }
+    .list td{
+      padding-bottom: 20px;
+    }
+    /* This is the name of the car in which it is placed
+    bottom of the main image and at the center */
+    .name{
+      font-size: 70px;
+      font-weight: bold;
+      color: silver;
+      position: absolute;
+      bottom: 5vh;
+      left:35vw;
+      opacity:0.5
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img src="https://cdna.artstation.com/p/assets/images/images/027/383/850/large/ashu-malik-new-bugati011.jpg?1591373160" id="main_image">
+    <div class="sub11">
+      <img src="https://www.pngmart.com/files/22/Bugatti-Logo-PNG-Image.png">
+    </div>
+    <div class="sub12">
+      <img src="https://www.transparentpng.com/thumb/bugatti/gIOYIg-bugatti-logo-png.png">
+    </div>
+    <table class="list">
+      <tr><td>Home</td></tr>
+      <tr><td>Bookings</td></tr>
+      <tr><td>Model</td></tr>
+      <tr><td>Racing</td></tr>
+      <tr><td>About</td></tr>
+    </table>
+    <div class="name">Bugatti <span style="color: red;">Veyron</span></div>
+  </div>
+</body>
+</html>
